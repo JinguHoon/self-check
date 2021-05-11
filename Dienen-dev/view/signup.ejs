@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dienen</title>
+    <link rel="icon" href="img/Dienen logo.svg" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/checkbox.css">
+</head>
+<body>
+    <div class="container">
+        <div class="container-logo">
+            <img src="img/Dienen logo.svg" width="32px" height="32" onclick="location.href='http://localhost:3000/'">
+            <img src="img/Dienen text.svg" width="157" height="40" onclick="location.href='http://localhost:3000/login'">
+        </div>
+        <div class="container-signup">
+            <div class="container-login-text margin_bottom_topic">새 계정 만들기</div>
+            <div class="container-login-name margin_bottom">
+                <p>이름</p>
+                <input type="text" placeholder="이름">
+            </div>
+            <div class="container-signup-id margin_bottom">
+                <p>아이디</p>
+                <input type="text" placeholder="아이디">
+            </div>
+            <div class="container-signup-pw margin_bottom">
+                <p>비밀번호</p>
+                <input type="password" placeholder="비밀번호">
+            </div>
+            <div class="container-signup-pwcheck margin_bottom">
+                <p>비밀번호확인</p>
+                <input type="password" placeholder="비밀번호확인">
+            </div>
+            <div class="container-signup-code margin_bottom">
+                <p>인증코드</p>
+                <input type="password" placeholder="인증코드">
+            </div>
+            <div class="container-login-click">
+                <button type="button" onclick="location.href='http://localhost:3000/Main'">회원가입</button>
+            </div>   
+        </div>
+    </div>
+    <label class="switch">
+        <input type="checkbox" id="toggleTheme">
+        <span class="slider round"></span>
+    </label>
+    <script src="/js/color.js"></script>
+</body>
+</html>
