@@ -1,5 +1,5 @@
 {
-  "name": "Dienen",
+  "name": "Dienen-Dev",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hoonsite/Dienen.git"
+    "url": "git+https://github.com/hoonsite/Dienen-Dev.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/hoonsite/Dienen/issues"
+    "url": "https://github.com/hoonsite/Dienen-Dev/issues"
   },
   "homepage": "https://github.com/hoonsite/Dienen#readme"
 }
