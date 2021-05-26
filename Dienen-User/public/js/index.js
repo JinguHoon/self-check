@@ -34,7 +34,7 @@ function find()
             mid = Math.floor((high+low)/2);
         }
     }
-    console.log(mid);
+    //console.log(mid);
     return mid;
 }
 
@@ -49,7 +49,7 @@ function time(idx){ // 남은 시간 계산함수\
     let minute = Math.floor((minustodate % (1000 * 60 * 60)) / (1000 * 60));
     //let second = Math.floor((minustodate % (1000 * 60)) / 1000);
     
-    console.log(new Date(), secondgradetime[idx][0], minustodate,day);
+    //console.log(new Date(), secondgradetime[idx][0], minustodate,day);
     if(day==0){
         if(hour==0) {
             if(minute==0) {
@@ -80,13 +80,13 @@ function setArray() //매번 동적으로 시간 설정
     let pushtime = new Date(now.getFullYear(), now.getMonth(), now.getDate(),12,45,00); //점심시간표
     for(let k=0;k<(secondgradetime.length)/2;k++) {
         secondgradetime[k][0] = pushtime.toString();
-        console.log(secondgradetime[k][0]);
+        //console.log(secondgradetime[k][0]);
         pushtime.setMinutes(pushtime.getMinutes()+3);
     }
     pushtime = new Date(now.getFullYear(), now.getMonth(), now.getDate(),18,45,00); //저녁시간표
     for(let k=(secondgradetime.length)/2; k<secondgradetime.length;k++) {
         secondgradetime[k][0] = pushtime.toString();
-        console.log(secondgradetime[k][0]);
+        //console.log(secondgradetime[k][0]);
         pushtime.setMinutes(pushtime.getMinutes()+3);
     }
 }
@@ -96,17 +96,17 @@ function setClock() //시작 함수
     let i = find();
     setInterval(function(){
         if(i==secondgradetime.length-1) {
-            console.log('hi');
+            //console.log('hi');
             document.getElementById('wait-time').innerHTML = "식사시간 끝!";
             for(var k=0;k<secondgradetime.length;k++) {
                 let d = new Date(secondgradetime[k][0]);
                 d.setDate(d.getDate() + 1);
                 secondgradetime[k][0] = d.toString();
-                console.log(secondgradetime[k][0]);
+                //console.log(secondgradetime[k][0]);
             }
             i=0;
         }
         if(!time(i)) i++;
-        console.log(i);
+        //console.log(i);
     },1000);
 }

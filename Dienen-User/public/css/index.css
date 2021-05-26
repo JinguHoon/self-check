@@ -24,6 +24,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 html{
+	-webkit-text-size-adjust: auto;
     background-color:  #1c1c1c;
     color: white;
     font-family: 'Noto Sans KR', sans-serif;
@@ -53,6 +54,10 @@ table {
     margin-left: 13%;
     margin-right: 13%;
 }
+/* .header {
+	display: flex;
+	flex-direction: row;
+} */
 .header-img {
     margin-right: 2rem;
 }
