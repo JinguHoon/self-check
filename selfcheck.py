@@ -2,8 +2,19 @@
 from base64 import decode
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
+import sys
 import time
-import os.path
+import os
+
+def resource_path(relative_path):
+    """ Get absolute path to resource, works for dev and for PyInstaller """
+    try:
+        # PyInstaller creates a temp folder and stores path in _MEIPASS
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
 
 file = "index.txt"
 if os.path.isfile(file):
@@ -22,12 +33,12 @@ else :
     f.write("%s\n" %pw)
     f.close()
 
-print(name, yymmdd, pw)
 url = "https://hcs.eduro.go.kr/#/relogin"
 schoolname = "한국디지털미디어고등학교"
 
 
-driver = webdriver.Chrome("chromedriver.exe")
+
+driver = webdriver.Chrome(resource_path("chromedriver.exe"))
 
 driver.get(url)
 
@@ -64,6 +75,8 @@ driver.find_element_by_xpath("//*[@id='survey_q2a1']").click()
 driver.find_element_by_xpath("//*[@id='survey_q3a1']").click()
 driver.find_element_by_xpath("//*[@id='btnConfirm']").click()
 time.sleep(2)
-driver.close()
-exit()
 
+driver.close()
+
+print("프로그램을 종료합니다.")
+sys.exit(0)
