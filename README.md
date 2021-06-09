@@ -6,7 +6,7 @@
 > 개발방식
 ##### ✅ 작성언어는 **Python**이며 [selenium](https://hogni.tistory.com/76) Package를 사용하였습니다.
 ##### ✅ 또한 selenium을 실행하기위해서 [chromedriver](https://chromedriver.chromium.org/downloads)을 설치하였습니다.
-##### ✅ Python으로 코드를 만든다음에 이것을 자동 스케줄러에 적용시키위해서 [bat pile](https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%B9%98_%ED%8C%8C%EC%9D%BC)로 변환하여 적용하였습니다.
+##### ✅ Python으로 코드를 만든다음에 이것을 자동 스케줄러에 적용시키위해서 [bat file](https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%B9%98_%ED%8C%8C%EC%9D%BC)로 변환하여 적용하였습니다.
 ```bat
 @echo on
 cd C:\Github\auto-selfcheck
@@ -40,4 +40,4 @@ pause
 ##### ⚠️ 첫번째! Visual Studio Code에 Python Extension을 설치해주셔야 합니다.
 ##### ⚠️ 두번째! "&은(는) 예상되지 않았습니다."라는 에러가 발생할 수 있는데 파일경로를 반드시 확인하시기 바랍니다. (저도 그거때문에 10분동안 찾았다는😭)
 ##### ⚠️ 세번째! name, yymmdd, pw는 본인이 입력해주셔야합니다 ㅠㅠ  
-![image](https://user-images.githubusercontent.com/61940768/121283280-cd40bc00-c915-11eb-82c1-98ff8327bd59.png)
+![image](https://user-images.githubusercontent.com/61940768/121295542-2e728a80-c92a-11eb-9f5c-2bd7f9d16b8e.png)
