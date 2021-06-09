@@ -6,7 +6,7 @@
 > 개발방식
 ##### ✅ 작성언어는 **Python**이며 [selenium](https://hogni.tistory.com/76) Package를 사용하였습니다.
 ##### ✅ 또한 selenium을 실행하기위해서 [chromedriver](https://chromedriver.chromium.org/downloads)을 설치하였습니다.
-##### ✅ Python으로 코드를 만든다음에 이것을 자동 스케줄러에 적용시키위해서 [bat pile](https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%B9%98_%ED%8C%8C%EC%9D%BC)로 변환하여 적용하였습니다.
+##### ✅ Python으로 코드를 만든다음에 이것을 자동 스케줄러에 적용시키위해서 [bat file](https://ko.wikipedia.org/wiki/%EB%B0%B0%EC%B9%98_%ED%8C%8C%EC%9D%BC)로 변환하여 적용하였습니다.
 ```bat
 @echo on
 cd C:\Github\auto-selfcheck
