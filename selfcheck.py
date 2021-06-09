@@ -4,9 +4,9 @@ import time
 
 url = "https://hcs.eduro.go.kr/#/relogin"
 schoolname = "한국디지털미디어고등학교"
-name = "이승훈"
-yymmdd = "040730"
-pw = 6475
+name = ""
+yymmdd = ""
+pw = ""
 
 
 driver = webdriver.Chrome("chromedriver.exe")
