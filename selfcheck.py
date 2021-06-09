@@ -78,5 +78,5 @@ time.sleep(2)
 
 driver.close()
 
-print("프로그램을 종료합니다.")
+print("자가진단이 완료되었습니다! cmd 창을 닫아주시면 됩니다!(ctrl+z)")
 sys.exit(0)
