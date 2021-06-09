@@ -1,2 +1,6 @@
-# auto-selfcheck
-This is program that perform auto-selfcheck
+<!--heading-->
+# 자가진단 자동화 시스템
+#### 이거슨 바로 매일 아침마다 해야대는 자가진단을 자동으로 해주는 기능이다아!
+
+
+
