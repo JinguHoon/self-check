@@ -79,4 +79,5 @@ time.sleep(2)
 driver.close()
 
 print("자가진단이 완료되었습니다! cmd 창을 닫아주시면 됩니다!(ctrl+c)")
+
 sys.exit(0)
